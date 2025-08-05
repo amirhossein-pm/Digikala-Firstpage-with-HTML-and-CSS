@@ -1,0 +1,154 @@
+div.amazingcontainer {
+  width: 100%;
+  height: 295px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .amazing {
+    width: 90%;
+    height: 100%;
+    background: linear-gradient(225deg, #d22c4e, #ee384e 41.68%, #ef5662);
+    border-radius: 20px;
+    padding: 20px 0px;
+    box-sizing: border-box;
+  }
+  .swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    user-select: none;
+    text-align: center;
+    font-size: 18px;
+    background: white;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7px;
+    box-sizing: border-box;
+    &.firstslide {
+      background-color: transparent;
+      .logo {
+        svg {
+          width: 75%;
+        }
+      }
+      .smile {
+        svg {
+          width: 100%;
+        }
+      }
+      .seeall {
+        a {
+          text-decoration: none;
+          font-family: IranYekan;
+          font-size: 13px;
+          color: #fcedf0;
+        }
+      }
+    }
+    .images {
+      img {
+        width: 100%;
+      }
+    }
+    .description {
+      width: 100%;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+      font-family: IranYekan;
+      font-size: 12px;
+      color: #797c82;
+    }
+
+    .price {
+      width: 100%;
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-between;
+      direction: ltr;
+      .newprice {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: start;
+        align-items: center;
+        gap: 5px;
+        direction: rtl;
+        .amount {
+          font-family: IranYekan;
+          font-size: 14px;
+          color: #3f4064;
+        }
+        .toman {
+          width: 16px;
+          height: 16px;
+          fill: #424750;
+          direction: ltr;
+        }
+      }
+      .discountpercent {
+        width: 20%;
+        font-family: IranYekan;
+        font-size: 12px;
+        background-color: #d32f2f;
+        color: #fdf4f4;
+        padding: 2px;
+        box-sizing: border-box;
+        border-radius: 15px;
+      }
+    }
+    .oldprice {
+      width: 100%;
+      font-family: IranYekan;
+      font-size: 12px;
+      color: #caccce;
+      text-align: left;
+      text-decoration: line-through;
+      padding-left: 20px;
+      box-sizing: border-box;
+    }
+    &.border-radius-top-bottom-right {
+      border-radius: 0px 10px 10px 0px;
+    }
+    &.border-radius-top-bottom-left {
+      border-radius: 10px 0px 0px 10px;
+    }
+    &.seemoreslider {
+      justify-content: center;
+      gap: 15px;
+      .morelogo {
+        width: 45px;
+        height: 45px;
+        border: 2px solid #19bfd3;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        svg {
+          width: 24px;
+          height: 24px;
+          fill: #19bfd3;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+      .seeallamazing {
+        font-family: IranYekan;
+        font-size: 14px;
+        color: #4c4d6e;
+      }
+    }
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+}

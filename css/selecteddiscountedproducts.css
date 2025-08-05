@@ -1,0 +1,110 @@
+div.selecteddiscountedproducts {
+  width: 100%;
+  height: 847px;
+  display: flex;
+  flex-flow: column nowrap;
+
+  align-items: center;
+  padding: 20px 0px;
+  .selected-discounted-products {
+    width: 92%;
+    height: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+
+    border: 1px solid #efeff0;
+    border-radius: 15px;
+    .selecteddiscountedproducts-title-and-svg {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      padding: 20px 0px 50px 0px;
+      .selecteddiscountedproducts-svg {
+        svg {
+          width: 24px;
+          height: 24px;
+          fill: #ef4056;
+        }
+      }
+      .selecteddiscountedproducts-main-title {
+        font-family: IranYekan;
+        font-size: 20px;
+        color: #000000;
+      }
+    }
+  }
+  .selected-discounted-body {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    .selected-discount-link {
+      display: block;
+      padding: 12px 8px;
+      text-decoration: none;
+      width: 200px;
+      border-bottom: 1px solid #f0f0f1;
+      border-left: 1px solid #f0f0f1;
+      .selected-discount-img-container {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+        .selected-discount-img {
+          width: 150px;
+          height: 150px;
+        }
+      }
+
+      .selected-discount-price-container {
+        display: flex;
+        justify-content: space-between;
+        .selected-discount-price-circle {
+          width: 35px;
+          height: 20px;
+          border-radius: 10px;
+          background-color: crimson;
+          color: #fff;
+          font-family: IranYekan;
+          font-size: 12px;
+          text-align: center;
+
+          line-height: 20px;
+          margin-right: 10px;
+        }
+        .selected-discount-final-price-container {
+          display: flex;
+          align-items: center;
+          column-gap: 3px;
+          .selected-discount-final-price {
+            font-family: IranYekan;
+            color: #3f4064;
+            font-size: 16px;
+          }
+          img {
+            width: 16px;
+            height: 16px;
+          }
+        }
+      }
+      .selected-discount-old-price {
+        font-size: 12px;
+        color: #c0c3cb;
+        text-decoration: line-through;
+        font-size: 12px;
+        font-family: IranYekan;
+        text-align: left;
+        margin-left: 20px;
+        margin-top: 10px;
+      }
+    }
+  }
+  .selected-discount-border-bottomless {
+    border-bottom: none !important;
+  }
+  .selected-discount-border-leftless {
+    border-left: none !important;
+  }
+}

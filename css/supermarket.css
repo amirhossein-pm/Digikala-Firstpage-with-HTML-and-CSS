@@ -1,0 +1,123 @@
+div.supermarket {
+  width: 100%;
+  height: 110px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  .supermarket-center {
+    width: 91%;
+    height: inherit;
+    position: relative;
+    background-color: #f0f0f1;
+    position: relative;
+    border-radius: 15px;
+    .supermarket-center-link {
+      display: none;
+      width: 100%;
+      height: 100%;
+      text-decoration: none;
+      border-radius: 15px;
+      position: relative;
+      display: flex;
+      flex-flow: row wrap;
+      align-items: center;
+      justify-content: flex-start;
+      .supermarket-center-link-right {
+        width: 37%;
+        height: inherit;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: flex-start;
+        column-gap: 15px;
+        align-items: center;
+        padding-right: 30px;
+        .supermarket-center-img-1 {
+          width: 66px;
+          height: 62px;
+        }
+        .supermarket-center-img-2 {
+          width: 250px;
+          height: 28px;
+        }
+        .supermarket-center-discount {
+          width: 110px;
+          height: 30px;
+          background-color: #029a49;
+          text-align: center;
+          font-family: IranYekan;
+          font-size: 14px;
+          line-height: 30px;
+          color: #fff;
+          border-radius: 15px;
+        }
+      }
+    }
+    .supermarket-center-link-left {
+      width: 800px;
+      height: 110px;
+      position: absolute;
+      left: 0;
+      top: 0;
+      display: flex;
+      flex-flow: row wrap;
+      align-items: center;
+      z-index: 100;
+      display: flex;
+      flex-flow: row wrap;
+      align-items: center;
+      justify-content: flex-start;
+      column-gap: 10px;
+      a {
+        display: block;
+        width: 74px;
+        height: 74px;
+
+        text-decoration: none;
+        .supermarket-center-link-left-circle {
+          width: 100%;
+          height: 100%;
+          position: relative;
+
+          span {
+            color: #fff;
+            background-color: crimson;
+            border-radius: 20px;
+            padding: 3px;
+            font-family: IranYekan;
+            font-size: 12px;
+            position: absolute;
+            bottom: -5px;
+            right: 1px;
+          }
+          img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+          }
+        }
+      }
+
+      .supermarket-center-link-left-more {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: IranYekan;
+        font-weight: lighter;
+        font-size: 13px;
+        color: #029a49;
+        background-color: #fff;
+        border-radius: 35px;
+        padding: 12px 20px;
+        img {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+    }
+    svg {
+      position: absolute;
+    }
+  }
+}
